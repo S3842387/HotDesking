@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.adminReportController">
+    <children>
+        <TextField fx:id="txtDateToReport" layoutX="249.0" layoutY="180.0" prefHeight="27.0" prefWidth="174.0" />
+
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="22.0" prefHeight="27.0" prefWidth="186.0" text="Generate Report From Date" underline="true">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="214.0" layoutY="49.0" text="Arub Company" />
+        <Label fx:id="isConnected" layoutX="238.0" layoutY="300.0" text="Status">
+        </Label>
+
+        <Button fx:id="buttonDoneEntering" layoutX="219.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#getDateAndGenerateReport" prefHeight="27.0" prefWidth="72.0" text="Done" />
+      <Button fx:id="buttonBack" layoutX="408.0" layoutY="333.0" mnemonicParsing="false" onAction="#goBackToAdmReport" prefHeight="27.0" prefWidth="72.0" text="Back" />
+      <Label layoutX="88.0" layoutY="182.0" text="Date to search for:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>
